@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mystos Wallet</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#00FFA3', // Cyber Green
+            primaryDark: '#00CC82',
+            // Dynamic Theme Colors
+            dark: 'var(--color-bg)',      // Main Background
+            card: 'var(--color-card)',    // Card Background
+            white: 'var(--color-text-main)', // Main Text & Icons (Swaps White <-> Black)
+            black: 'var(--color-text-inverse)', // Inverse (Swaps Black <-> White)
+
+            slate: {
+              400: 'var(--color-slate-400)',
+              500: 'var(--color-slate-500)',
+              800: '#1e293b',
+              900: '#0f172a'
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-bg: #000000;
+      --color-card: #111111;
+      --color-text-main: #ffffff;
+      --color-text-inverse: #000000;
+      --color-slate-400: #94a3b8;
+      --color-slate-500: #64748b;
+    }
+
+    /* Light Mode Overrides */
+    body.light-mode {
+      --color-bg: #f0fdf4;
+      /* Very light mint/white */
+      --color-card: #ffffff;
+      --color-text-main: #0f172a;
+      /* Dark text */
+      --color-text-inverse: #ffffff;
+      --color-slate-400: #94a3b8;
+      --color-slate-500: #475569;
+      /* Darker Slate for text visibility */
+    }
+
+    input::-webkit-outer-spin-button,
+    input::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+
+    input[type="number"] {
+      -moz-appearance: textfield;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--color-bg);
+      color: var(--color-text-main);
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    /* Global Scrollbar Hiding */
+    * {
+      -ms-overflow-style: none;
+      /* IE and Edge */
+      scrollbar-width: none;
+      /* Firefox */
+    }
+
+    *::-webkit-scrollbar {
+      display: none;
+      /* Chrome, Safari and Opera */
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+
+</html>

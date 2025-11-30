@@ -1,0 +1,27 @@
+{
+  "name": "mystos-server-clean",
+  "version": "0.1.0",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "axios": "^1.13.2",
+    "bs58": "^5.0.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.1.4",
+    "ethers": "^6.15.0",
+    "express": "^4.18.2",
+    "js-sha256": "^0.9.0",
+    "jsonwebtoken": "^9.0.0",
+    "nanoid": "^4.0.2",
+    "qrcode": "^1.5.1",
+    "sqlite3": "^5.1.6",
+    "tweetnacl": "^1.0.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
