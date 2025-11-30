@@ -53,7 +53,7 @@ Mystos ensures your data never leaves your device, and only encrypted metadata o
 3. Ratings affect trust recommendations in the AI assistant
 
 ⚙️ 6. Settings Menu
-1.Accessible from the top-left menu:
+(Accessible from the top-left menu)
   - Profile
   - Settings
   - Change Theme
