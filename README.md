@@ -1,4 +1,4 @@
-### Mystos — Privacy-First AI Wallet & DAO Voting dApp
+## Mystos — Privacy-First AI Wallet & DAO Voting dApp
 
 A mobile wallet where users control an AI assistant that performs DAO operations privately using Zero-Knowledge Proofs.
 
